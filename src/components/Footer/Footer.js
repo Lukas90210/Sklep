@@ -54,7 +54,7 @@ function Footer() {
           <p>ABOUT</p>
           <ul>
             <li>
-              <StyledLink>Our Stories</StyledLink>
+              <StyledLink>Our Store</StyledLink>
             </li>
             <li>
               <StyledLink>Contact Us</StyledLink>
