@@ -13,7 +13,7 @@ const Navbar = () => (
         <ul>
           <li>
             <Link className="navLink" to="/">
-              SHOPx
+              SHOP
             </Link>
           </li>
           <li>
