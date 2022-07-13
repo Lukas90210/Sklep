@@ -18,18 +18,14 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function Header() {
-  return (
-    <>
-      <Container>
-        <div>
-          <p>Welcome to Goodies</p>
-          <h2>Discover our passion</h2>
-            <StyledLink to="/Demo">Home</StyledLink>
-        </div>
-      </Container>
-    </>
-  );
-}
+const Header = () => (
+  <Container>
+    <div>
+      <p>Welcome to Goodies</p>
+      <h2>Discover our passion</h2>
+      <StyledLink to="/Demo">Home</StyledLink>
+    </div>
+  </Container>
+);
 
 export default Header;

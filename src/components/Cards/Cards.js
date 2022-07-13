@@ -1,6 +1,11 @@
 import { cardsData } from "./data";
 import CardsItem from "./CardsItem";
-import { CardsContainer, Container, Content, LinkContainer } from "./Cards.styled";
+import {
+  CardsContainer,
+  Container,
+  Content,
+  LinkContainer,
+} from "./Cards.styled";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -21,24 +26,20 @@ const StyledLink = styled(Link)`
   }
 `;
 
-function Cards() {
-  return (
-    <>
-      <CardsContainer>
-        <Container>
-          <h1>OUR PRODUCTS</h1>
-          <Content>
-            {cardsData.map((item) => (
-              <CardsItem key={item.describe} {...item} />
-            ))}
-          </Content>
-        </Container>
-        <LinkContainer>
-          <StyledLink to="/Demo">See more</StyledLink>
-        </LinkContainer>
-      </CardsContainer>
-    </>
-  );
-}
+const Cards = () => (
+  <CardsContainer>
+    <Container>
+      <h1>OUR PRODUCTS</h1>
+      <Content>
+        {cardsData.map((item) => (
+          <CardsItem key={item.describe} {...item} />
+        ))}
+      </Content>
+    </Container>
+    <LinkContainer>
+      <StyledLink to="/Demo">See more</StyledLink>
+    </LinkContainer>
+  </CardsContainer>
+);
 
 export default Cards;

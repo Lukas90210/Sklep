@@ -13,7 +13,7 @@ const Btn = styled.button`
   }
 `;
 
-export const Button = ({ children, onClick, type }) => (
+const Button = ({ children, onClick, type }) => (
   <>
     <Btn onClick={onClick} type={type}>
       {children}
