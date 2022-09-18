@@ -12,6 +12,11 @@ const StyledLink = styled(Link)`
   transition: 0.2s;
   background-color: #222;
   padding: 8px 12px;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+
   &:hover {
     color: #333;
     background-color: #fff;

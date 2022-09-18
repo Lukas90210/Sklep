@@ -24,6 +24,10 @@ const StyledLink = styled(Link)`
     background-color: #fff;
     border: 1px solid #222;
   }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 const Cards = () => (

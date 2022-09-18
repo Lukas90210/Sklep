@@ -15,20 +15,36 @@ export const Content = styled.div`
   margin: 0 auto;
   color: #fff;
   padding: 100px 0;
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
   h4 {
     font-weight: 400;
     margin-bottom: 20px;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   h3 {
     font-weight: 400;
     margin-bottom: 30px;
     text-align: center;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   p {
     font-weight: 100;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 `;
 export const Form = styled.div`
@@ -37,7 +53,7 @@ export const Form = styled.div`
   justify-content: space-between;
   input {
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     padding: 13px 14px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -46,14 +62,22 @@ export const Form = styled.div`
     &::placeholder {
       color: #fff;
     }
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+      padding: 11px 12px;
+    }
   }
 
   Button {
-    font-size: 14px;
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 10px;
     padding: 7px 10px;
     &:hover {
       color: #fff;
+    }
+    @media (max-width: 768px) {
+      font-size: 13px;
     }
   }
 `;

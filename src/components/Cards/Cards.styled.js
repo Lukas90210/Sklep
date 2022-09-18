@@ -21,6 +21,10 @@ export const Container = styled.div`
     font-size: 19px;
     font-weight: 300;
     color: #333;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 `;
 export const Content = styled.div`
@@ -47,4 +51,8 @@ export const CardText = styled.div`
   padding: 10px 0 0 0;
   font-size: 15px;
   color: #666;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `;

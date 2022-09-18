@@ -17,6 +17,10 @@ export const Container = styled.div`
       font-weight: 300;
       color: #fff;
       cursor: default;
+
+      @media (max-width: 768px) {
+          font-size: 35px;
+      }
     }
 
     h2 {
@@ -24,5 +28,9 @@ export const Container = styled.div`
       font-weight: 400;
       margin-bottom: 25px;
       cursor: default;
+
+       @media (max-width: 768px) {
+          font-size: 22px;
+      }
     }
 `;
